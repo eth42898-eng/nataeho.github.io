@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <meta name="description" content="AI Engineering student portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="logo">Portfolio</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-inner reveal">
+      <h1 class="hero-name">YOUR NAME</h1>
+      <p class="hero-role">Artificial Intelligence Engineering Student</p>
+      <p class="hero-intro">Interested in AI, Machine Learning, and Software Development.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about reveal">
+      <p>
+        I am majoring in Artificial Intelligence Engineering and I am interested in
+        machine learning, computer vision, and AI service development.
+      </p>
+      <p>
+        Currently, I am studying Machine Learning, Git/GitHub, and Web Development.
+        My goal is to become an AI developer who can build practical AI services.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="card reveal">
+      <h3>Your University</h3>
+      <p class="muted">Department of Artificial Intelligence Engineering</p>
+      <p class="muted">Year: 2nd year &nbsp;|&nbsp; GPA: 0.0 / 4.5</p>
+      <p>Related courses: Machine Learning, Data Structures, Signals &amp; Systems,
+         Open-Source SW, Introduction to Artificial Intelligence</p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="card reveal">
+        <h3>Programming</h3>
+        <ul class="skill-list">
+          <li>Python <span class="lvl">Intermediate</span></li>
+          <li>C / C++ <span class="lvl">Intermediate</span></li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>AI / ML</h3>
+        <ul class="skill-list">
+          <li>PyTorch <span class="lvl">Basic</span></li>
+          <li>scikit-learn <span class="lvl">Basic</span></li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Web</h3>
+        <ul class="skill-list">
+          <li>HTML <span class="lvl">Basic</span></li>
+          <li>CSS <span class="lvl">Basic</span></li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Tools</h3>
+        <ul class="skill-list">
+          <li>Git / GitHub <span class="lvl">Basic</span></li>
+          <li>Docker <span class="lvl">Basic</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <article class="card reveal">
+        <h3>Project Title</h3>
+        <p class="muted">Period: 2026.04 ~ 2026.05</p>
+        <p>Short summary of what this project does and the problem it solves.</p>
+        <p><strong>Tech Stack:</strong> Python, OpenCV, MediaPipe</p>
+        <p><strong>Role:</strong> Developed the full application single-handedly.</p>
+        <p><strong>Key Features:</strong> Real-time tracking, gesture recognition, interaction control.</p>
+        <p><strong>Results:</strong> Successfully achieved the intended outcome with webcam input.</p>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Repository</a>
+      </article>
+      <article class="card reveal">
+        <h3>Second Project</h3>
+        <p class="muted">Period: 2026.01 ~ 2026.03</p>
+        <p>Another project description goes here. Keep it concise and clear.</p>
+        <p><strong>Tech Stack:</strong> Python, PyTorch</p>
+        <p><strong>Role:</strong> Model training and evaluation.</p>
+        <p><strong>Key Features:</strong> Data preprocessing, model training, result visualization.</p>
+        <p><strong>Results:</strong> Describe the metrics or outcome you achieved.</p>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Repository</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="card reveal">
+      <h3>Programming Club Member</h3>
+      <p>Active member of the coding club at your university, participating in
+         programming studies and development activities.</p>
+    </div>
+  </section>
+
+  <!-- ============ RESUME ============ -->
+  <section class="section" id="resume">
+    <h2 class="section-title">CV / Resume</h2>
+    <div class="card reveal center">
+      <p class="muted">A one-page overview of my education, skills, and projects.</p>
+      <a href="resume.pdf" download class="btn btn-primary">Download My Resume</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact reveal">
+      <p>Email : <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub : <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourname</a></p>
+    </div>
+    <div class="career reveal">
+      <h3>Career Goal</h3>
+      <ul>
+        <li>AI Developer</li>
+        <li>Computer Vision Engineer</li>
+        <li>Web Application Developer</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name</p>
+    <p class="muted">Built with HTML · CSS · JavaScript &nbsp;•&nbsp; Deployed on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

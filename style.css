@@ -1,11 +1,11 @@
 :root{
-  /* Barcelona blaugrana palette, muted & elegant */
-  --bg:#0b1437;            /* deep navy (blau) */
-  --bg-soft:#152150;       /* lighter navy card */
+  
+  --bg:#0b1437;           
+  --bg-soft:#152150;       
   --text:#eef1f8;
   --muted:#9aa6c9;
-  --garnet:#a3123a;        /* grana (garnet red) */
-  --gold:#f4c430;          /* elegant gold accent */
+  --garnet:#a3123a;        
+  --gold:#f4c430;          
   --accent:#f4c430;
   --border:rgba(244,196,48,.14);
   --radius:14px;
@@ -20,7 +20,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 a{color:inherit;text-decoration:none}
 .muted{color:var(--muted)}
 
-/* navbar */
+
 .navbar{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;
   justify-content:space-between;padding:16px clamp(20px,5vw,48px);
   background:rgba(11,20,55,.82);backdrop-filter:blur(10px);transition:.3s;border-bottom:1px solid transparent}
@@ -33,7 +33,7 @@ a{color:inherit;text-decoration:none}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
 .nav-toggle span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
 
-/* hero */
+
 .hero{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;
   padding:120px 20px 60px;max-width:var(--maxw);margin:0 auto}
 .hero-name{font-size:clamp(2.4rem,7vw,3.6rem);font-weight:700;letter-spacing:2px;
@@ -43,7 +43,7 @@ a{color:inherit;text-decoration:none}
 .hero-intro{color:var(--muted);max-width:480px;margin:0 auto 28px}
 .hero-buttons{display:flex;gap:14px;justify-content:center}
 
-/* buttons */
+
 .btn{padding:11px 24px;border-radius:8px;font-weight:600;font-size:.92rem;transition:.25s;border:1px solid transparent;display:inline-block}
 .btn-primary{background:linear-gradient(90deg,var(--garnet),var(--gold));color:#0b1437}
 .btn-primary:hover{opacity:.9;transform:translateY(-2px);box-shadow:0 8px 24px rgba(244,196,48,.25)}
@@ -51,7 +51,7 @@ a{color:inherit;text-decoration:none}
 .btn-outline{border-color:var(--border);color:var(--text)}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
 
-/* sections */
+
 .section{max-width:var(--maxw);margin:0 auto;padding:64px clamp(20px,5vw,48px)}
 .section-title{font-size:1.6rem;font-weight:700;margin-bottom:26px;padding-bottom:10px;
   border-bottom:1px solid var(--border)}
@@ -62,7 +62,7 @@ a{color:inherit;text-decoration:none}
   background:rgba(244,196,48,.14);color:var(--gold);padding:3px 10px;border-radius:30px;border:1px solid var(--border)}
 .about p{margin-bottom:14px;color:var(--muted)}
 
-/* cards */
+
 .card{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);
   padding:24px;transition:.25s}
 .card:hover{border-color:rgba(244,196,48,.45);transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.3)}
@@ -71,17 +71,16 @@ a{color:inherit;text-decoration:none}
 .card strong{color:var(--gold)}
 .card.center{text-align:center}
 
-/* skills */
+
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
 .skill-list{list-style:none}
 .skill-list li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:.95rem}
 .skill-list li:last-child{border-bottom:none}
 .lvl{color:var(--gold);font-size:.82rem}
 
-/* projects */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 
-/* contact / career */
+
 .contact p{margin-bottom:8px}
 .contact a{color:var(--gold)}
 .career{margin-top:26px}
@@ -89,15 +88,15 @@ a{color:inherit;text-decoration:none}
 .career ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
 .career li{background:var(--bg-soft);border:1px solid var(--border);padding:6px 16px;border-radius:30px;font-size:.88rem;color:var(--muted)}
 
-/* footer */
+
 .footer{text-align:center;padding:36px 20px;border-top:1px solid var(--border);font-size:.88rem}
 .footer .muted{margin-top:6px;font-size:.8rem}
 
-/* reveal */
+
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:none}
 
-/* responsive */
+
 @media(max-width:760px){
   .nav-links{position:fixed;top:57px;right:0;flex-direction:column;gap:0;
     background:rgba(11,20,55,.98);width:200px;height:calc(100vh - 57px);padding:16px;
